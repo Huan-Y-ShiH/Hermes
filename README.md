@@ -32,6 +32,16 @@ Use any model you want — [Nous Portal](https://portal.nousresearch.com), OpenR
 
 ---
 
+## 本地运行预览
+
+<p align="center">
+  <img src="screenshots/preview.png" alt="Hermes Desktop 本地运行" width="100%">
+</p>
+
+> **环境**：Windows 11 / Electron 40 / Python 3.11 / Qwen3-32B (硅基流动 SiliconFlow)
+
+---
+
 ## Quick Install
 
 ### Linux, macOS, WSL2, Termux
