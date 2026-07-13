@@ -40,6 +40,21 @@ Use any model you want — [Nous Portal](https://portal.nousresearch.com), OpenR
 
 > **环境**：Windows 11 / Electron 40 / Python 3.11 / Qwen3-32B (硅基流动 SiliconFlow)
 
+### 快速启动桌面应用
+
+```powershell
+# 1. 安装依赖（仅首次）
+npm ci
+
+# 2. 构建 + 启动（一行搞定）
+.\desktop.ps1
+
+# 如果 dist/ 已过期，重建后启动
+.\desktop.ps1 -Rebuild
+```
+
+> `desktop.ps1` 自动注入 `HERMES_HOME=workspace` 并启动 Electron，无需手动设环境变量。
+
 ---
 
 ## Quick Install
