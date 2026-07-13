@@ -192,3 +192,7 @@ infographic/
 
 # Local API key file
 key.txt
+
+# TypeScript build artifacts
+apps/desktop/src/**/*.js
+apps/desktop/src/**/*.js.map
