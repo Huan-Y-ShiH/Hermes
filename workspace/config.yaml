@@ -1,0 +1,13 @@
+# 默认模型：硅基流动 SiliconFlow（国内端点，OpenAI 兼容）
+# - key 从 workspace\.env 的 OPENAI_API_KEY 读取
+# - base_url 走国内端点 api.siliconflow.cn
+model:
+  provider: custom
+  default: Qwen/Qwen3-32B
+  base_url: https://api.siliconflow.cn/v1
+
+platforms:
+  api_server:
+    port: 8642
+    enabled: true
+mcp_servers: {}
