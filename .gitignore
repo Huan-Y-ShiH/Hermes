@@ -68,7 +68,11 @@ environments/benchmarks/evals/
 hermes_cli/web_dist/
 apps/desktop/build/
 apps/desktop/dist/
-apps/desktop/release/
+# apps/desktop/release/  # 保留绿色便携版 .exe
+apps/desktop/release/builder-*.yml
+apps/desktop/release/builder-*.yaml
+apps/desktop/release/*.blockmap
+apps/desktop/release/win-unpacked/
 apps/desktop/*.tsbuildinfo
 
 # Web UI assets — synced from @nous-research/ui at build time via
