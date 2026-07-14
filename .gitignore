@@ -199,3 +199,14 @@ apps/desktop/src/**/*.js.map
 
 # PyInstaller
 *.spec
+
+# Backup icon files
+*.ico.bak
+*.png.bak
+
+# Workspace runtime cache
+workspace/*_cache.json
+workspace/pets/
+
+# Shared package tsc output
+apps/shared/src/*.js
