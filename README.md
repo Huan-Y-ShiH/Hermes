@@ -55,6 +55,31 @@ npm ci
 
 > `desktop.ps1` 自动注入 `HERMES_HOME=workspace` 并启动 Electron，无需手动设环境变量。
 
+### 绿色便携版
+
+```powershell
+# 构建单文件 .exe 安装包（输出：apps\desktop\release\）
+npm run dist:win:nsis
+```
+
+构建产物 `Hermes-0.17.0-win-x64.exe`（~114 MB）可直接分发到任意 Windows 机器运行，首次启动会自动下载 Hermes Agent 运行时。图标已替换为自定义 logo。
+
+<div align="center">
+
+| 版本 | 文件 | 大小 | 说明 |
+|---|---|---|---|
+| 单文件安装包 | `apps\desktop\release\Hermes-0.17.0-win-x64.exe` | 114 MB | NSIS 便携安装器 |
+| 单文件启动器 | `HermesDesktop.exe` | 7.6 MB | PyInstaller 编译，双击启动已安装环境 |
+| PowerShell 脚本 | `desktop.ps1` | 1 KB | 源码启动，自动注入环境变量 |
+
+</div>
+
+**已完成的定制：**
+- 硅基流动 SiliconFlow + Qwen3-32B 模型供应商配置
+- 自定义任务栏/标题栏图标（`apps/desktop/assets/icon.ico`）
+- 中文界面（`config.yaml` `display.language: zh`）
+- 项目根快捷启动器（`HermesDesktop.exe` / `desktop.ps1`）
+
 ---
 
 ## Quick Install
